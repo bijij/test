@@ -1,0 +1,15 @@
+name: "Main"
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Sync Labels
+        uses: ShineyDev/sync-labels-action@main
+        with:
+          token: ${{ secrets.SYNC_TOKEN }}
