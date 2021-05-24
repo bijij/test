@@ -1,0 +1,10 @@
+labels:
+- name: oranges
+  color: F7B32A
+  description: oranges
+- name: apples
+  color: 11F788
+  description: apples
+- name: grapes
+  color: B62AF7
+  description: grapes
